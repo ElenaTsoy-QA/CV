@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Engineer - Визитка</title>
+    <link type="image/x-icon" href="фавикон.png" rel="shortcut icon">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            background: #000000 url('https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.8);
+            margin: 50px auto;
+            border-radius: 10px;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            font-size: 1.2em;
+        }
+        .contact-info a {
+            color: #00ff00;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact-info a:hover {
+            color: #ff0000;
+        }
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .stars::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <h1>QA Engineer</h1><hr> 
+        <img height="200px"  alt='Это я' src="ленка.jpg">
+        <p>Привет! Меня зовут Елена. Я QA инженер с опытом работы в ручном тестировании. Моя цель - обеспечивать качество программного обеспечения и помогать командам создавать надежные и эффективные продукты.</p>
+        <div class="contact-info">
+            <p>Email: <a href="https://mail.ru/">Elenatsoy7@mail.ru</a></p>
+            <p>Телефон:+79376631551</p>
+        </div>
+    </div>
+</body>
+</html>
